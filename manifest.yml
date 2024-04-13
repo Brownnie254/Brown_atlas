@@ -1,0 +1,16 @@
+modules:
+  bitbucket:repoCodeOverviewCard:
+    - key: brown-atlas-hello-world-repository-code-overview-card
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: Brown_atlas
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  id: ari:cloud:ecosystem::app/00b91dc7-0652-4855-a9aa-d7332189efb2
